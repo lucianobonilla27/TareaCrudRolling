@@ -1,7 +1,8 @@
-// ● Filtrar productos que coincidan con una palabra, parte de ella
-// o una letra
-// ● Eliminar producto del carrito
+const carritoDeCompras = []
 
-function filtrar(params) {
-    
-}
+const agregarProductoAlCarrito = (carrito, producto) => {
+    carrito.push(producto);
+    console.log(`${producto.nombre} ha sido agregado al carrito.`);
+};
+agregarProductoAlCarrito(carritoDeCompras, { nombre: "Producto ", precio: 1500})
+
