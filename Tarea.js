@@ -33,3 +33,10 @@ function filtrarProductos(carrito, filtro) {
   }
 }
 
+// Función para mostrar productos del carrito
+function mostrarProductosDelCarrito() {
+  for (let index = 0; index < carritoDeCompras.length; index++) {
+    console.log(carritoDeCompras[index].nombre);
+    console.log(carritoDeCompras[index].precio);
+  }       
+}
