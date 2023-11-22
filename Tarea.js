@@ -1,5 +1,8 @@
 
 const carritoDeCompras = [];
+// agregarProductoAlCarrito(carritoDeCompras, { nombre: "Producto 1", precio: 1500 });
+// agregarProductoAlCarrito(carritoDeCompras, { nombre: "Producto 2", precio: 2500 });
+// agregarProductoAlCarrito(carritoDeCompras, { nombre: "Producto 3", precio: 3500 });
 
 const agregarProductoAlCarrito = (carrito, producto) => {
   carrito.push(producto);
@@ -42,10 +45,12 @@ function mostrarProductosDelCarrito() {
   }       
 }
 
-function buscarProductos(carritoDeCompras , nombre) {
+function buscarProductos(carritoDeCompras,nombre) {
 
-    for (let index = 0; index < array.length; index++) {
+    for (let index = 0; index < carritoDeCompras.length; index++) {
         if (carritoDeCompras[index].nombre === nombre) {
             console.log("Producto buscado: " + carritoDeCompras[index].nombre + " y su precio es: " + carritoDeCompras[index].precio)
+            return
     } else { console.log("No se encontró lo que buscas, bro")
+    return
 }}}
